@@ -34,7 +34,7 @@ const Hero: FC<HeroProps> = ({ slice }) => {
           </div>
         )}
         {isFilled.link(slice.primary.button_link) && (
-          <ButtonLink className="mt-8" field={slice.primary.button_link}>
+          <ButtonLink className="my-8" field={slice.primary.button_link}>
             {slice.primary.button_label}
           </ButtonLink>
         )}
