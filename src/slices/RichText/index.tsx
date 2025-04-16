@@ -29,7 +29,7 @@ type RichTextProps = SliceComponentProps<Content.RichTextSlice>;
  */
 const RichText: FC<RichTextProps> = ({ slice }) => {
   return (
-    <Bounded className="prose prose-invert prose-lg prose-slate">
+    <Bounded className="prose prose-invert prose-lg prose-slate xl:prose-xl">
       <PrismicRichText field={slice.primary.content} components={components} />
     </Bounded>
   );
