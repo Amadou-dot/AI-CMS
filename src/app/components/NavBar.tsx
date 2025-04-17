@@ -16,7 +16,7 @@ const NavBar = ({ settings }: Props) => {
           <WordMark />
           <span className="sr-only">Glisten.ai Home Page</span>
         </Link>
-        <ul className="flex gap-6">
+        <ul className="flex gap-6 mt-4 md:mt-0">
           {settings.data.navigation.map((item) => {
             if (item.cta_button)
               return (

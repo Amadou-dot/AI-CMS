@@ -50,7 +50,7 @@ const Showcase: FC<ShowcaseProps> = ({ slice }) => {
             <PrismicRichText field={slice.primary.body} />
           </div>
 
-          <ButtonLink field={slice.primary.button_link} className="mt-6">
+          <ButtonLink field={slice.primary.button_link} className="mt-6 mb-4 md:mb-0">
             {slice.primary.button_text || "Learn More"}
           </ButtonLink>
         </div>
