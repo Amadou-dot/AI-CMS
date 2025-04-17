@@ -5,7 +5,7 @@ import { PrismicPreview } from "@prismicio/next";
 import clsx from "clsx";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
-
+import { Analytics } from "@vercel/analytics/react";
 const dmSans = DM_Sans({
   subsets: ["latin"],
   display: "swap",
@@ -22,6 +22,7 @@ export default function RootLayout({
       <body className={clsx(dmSans.variable, "bg-[#070815] text-white")}>
         <Header />
         <main>{children}</main>
+        <Analytics />
         <Footer />
       </body>
       <PrismicPreview repositoryName={repositoryName} />
