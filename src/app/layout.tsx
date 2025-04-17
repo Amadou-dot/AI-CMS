@@ -6,6 +6,7 @@ import clsx from "clsx";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const dmSans = DM_Sans({
   subsets: ["latin"],
   display: "swap",
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Analytics />
+        <SpeedInsights />
         <Footer />
       </body>
       <PrismicPreview repositoryName={repositoryName} />
