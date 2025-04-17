@@ -37,7 +37,7 @@ const Showcase: FC<ShowcaseProps> = ({ slice }) => {
           ),
         }}
       />
-      <div className="mt-16 grid items-center rounded-xl border border-blue-50/20 bg-gradient-to-b from-slate-50/15 to-slate-50/5 px-8 py-8 backdrop-blur-sm lg:grid-cols-3 lg:py-12">
+      <div className="mt-16 gap-8 lg:gap-0 grid items-center rounded-xl border border-blue-50/20 bg-gradient-to-b from-slate-50/15 to-slate-50/5 px-8 py-8 backdrop-blur-sm lg:grid-cols-3 lg:py-12">
         <div>
           <div className="w-fit rounded-lg bg-blue-500/35 p-4 text-3xl">
             {icons[slice.primary.icon]}
@@ -50,7 +50,7 @@ const Showcase: FC<ShowcaseProps> = ({ slice }) => {
             <PrismicRichText field={slice.primary.body} />
           </div>
 
-          <ButtonLink field={slice.primary.button_link} className="mt-6 mb-4 md:mb-0">
+          <ButtonLink field={slice.primary.button_link} className="mt-6">
             {slice.primary.button_text || "Learn More"}
           </ButtonLink>
         </div>
